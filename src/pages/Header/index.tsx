@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import * as S from './styles';
-import LogoSrc from "../../Assets/Logo.png";
 
-const Header = () => {
+interface IHeaderProps {
+  urlImgLogo?: string;
+}
+
+const Header: React.FC<IHeaderProps> = ({
+  urlImgLogo = "https://raw.githubusercontent.com/MaikonRodrigs/Calindra/main/src/Assets/Logo.png",
+}
+) => {
   const [openNav, setOpenNav] = useState<boolean>(false);
 
   const HandlerOpenNav = () => {
@@ -13,7 +19,7 @@ const Header = () => {
     <S.Container>
       <S.DotsIcon onClick={HandlerOpenNav} />
       <S.Logo>
-        <img src={LogoSrc} />
+        <img src={urlImgLogo} />
         <S.LogoText>
           <h1>zutterman</h1>
           <p>measure tapes</p>

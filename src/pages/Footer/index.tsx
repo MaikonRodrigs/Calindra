@@ -1,19 +1,26 @@
 import React from 'react';
-import YoutubeImg from '../../Assets/Youtube.png'
-import FacebookImg from '../../Assets/Facebook.png'
-import TwitterImg from '../../Assets/Twitter.png'
 import * as S from './styles';
 
+interface IFooterProps {
+  urlYoutubeIcon?: string;
+  urlFacebookIcon?: string;
+  urlYTwiiterIcon?: string;
+}
 
-const Footer = () => {
+
+const Footer: React.FC<IFooterProps> = ({
+  urlYoutubeIcon = "https://raw.githubusercontent.com/MaikonRodrigs/Calindra/main/src/Assets/youtube.png",
+  urlFacebookIcon = "https://raw.githubusercontent.com/MaikonRodrigs/Calindra/main/src/Assets/facebook.png",
+  urlYTwiiterIcon = "https://raw.githubusercontent.com/MaikonRodrigs/Calindra/main/src/Assets/twitter.png",
+}) => {
   return (
     <S.Container>
       <S.WrapperFirst>
         <h1>Follow Us</h1>
         <S.Social>
-          <img src={YoutubeImg}></img>
-          <img src={FacebookImg} className="Facebook"></img>
-          <img src={TwitterImg}></img>
+          <img src={urlYoutubeIcon}></img>
+          <img src={urlFacebookIcon} className="Facebook"></img>
+          <img src={urlYTwiiterIcon}></img>
         </S.Social>
       </S.WrapperFirst>
       <S.WrapperSecond>
