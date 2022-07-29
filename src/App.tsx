@@ -1,10 +1,18 @@
-import react from 'react'
+import react from 'react';
+import Footer from './pages/Footer';
+import Header from './pages/Header';
+import Homepage from './pages/Homepage';
+import GlobalStyle from "./styles/GlobaStyles";
 
 function App() {
   return (
-    <div>
-      <h1>Hello, World</h1>
-    </div>
+    <>
+      <GlobalStyle />
+      <Header />
+      <Homepage />
+      <Footer />
+    </>
+
   )
 }
 
