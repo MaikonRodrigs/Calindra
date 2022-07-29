@@ -10,7 +10,12 @@
 
 # production
 /build
+/dist
 
+# Firebase Hosting
+.firebaserc
+.firebase
+firebase-debug.log
 # misc
 .DS_Store
 .env
