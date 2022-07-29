@@ -3,8 +3,8 @@ https://calindrareactjs.web.app/
 
 
 This project created from [Vite] template `@TypeScript` <br>
-First run `yarn` next `yarn run dev --host`, and **enjoy** 💥 <br>
-## REACTJS<br>
+First run `yarn` next `yarn run dev`, and **enjoy** 💥 <br>
+## React v18.2.0<br>
 ### Libs
 - [x] Styled Components <br>
 - [x] Styled Icons <br>
