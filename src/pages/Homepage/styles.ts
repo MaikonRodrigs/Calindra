@@ -92,6 +92,7 @@ export const Description = styled.div`
     margin-top: 22px;
     font-size: 26.2px;
     line-height: 31px;
+    font-weight: 100;
     @media (min-width: 720px) {
       font-size: 48.2px;
       line-height: 56px;

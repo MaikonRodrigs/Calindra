@@ -22,7 +22,7 @@ const Header: React.FC<IHeaderProps> = ({
         <img src={urlImgLogo} />
         <S.LogoText>
           <h1>zutterman</h1>
-          <p>measure tapes</p>
+          <p>Measure Tapes</p>
         </S.LogoText>
       </S.Logo>
       <S.ItemsMenu>

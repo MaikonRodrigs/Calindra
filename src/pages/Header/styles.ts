@@ -52,6 +52,7 @@ export const LogoText = styled.h1`
     font-size: 16.2px;
     line-height: 19px;
     letter-spacing: 5.4px;
+    font-weight: 100;
   }
   @media (max-width: 920px) {
     display: none;
@@ -66,6 +67,7 @@ export const ItemsMenu = styled.div`
     line-height: 19px;
     letter-spacing: 5.4px;
     color: var(--text_primary);
+    font-weight: 100;
     &:hover {
       color: var(--black);
       border-bottom: 2px var(--black) solid;
